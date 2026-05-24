@@ -1,0 +1,75 @@
+---
+---
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-left">
+      <img src="/icons/toncore-diamond.png" alt="" class="footer-logo-icon" width="34" height="34" />
+    </div>
+    <div class="footer-right">
+      <span class="footer-disclaimer">
+        <span class="footer-muted">Not supported by</span>
+        {' '}
+        <span class="footer-bold">TON Foundation</span>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 28px 0;
+  }
+
+  .footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    opacity: 0.2;
+  }
+
+  .footer-logo-icon {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+  }
+
+  .footer-right {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .footer-disclaimer {
+    font-size: 14px;
+    line-height: 1;
+  }
+
+  .footer-muted {
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  .footer-bold {
+    font-weight: 600;
+    color: var(--color-text);
+  }
+
+  @media (max-width: 768px) {
+    .footer {
+      padding: 20px 0;
+    }
+
+    .footer-disclaimer {
+      font-size: 12px;
+    }
+  }
+</style>

@@ -1,0 +1,97 @@
+---
+---
+
+<section class="hero">
+  <div class="hero-pattern" aria-hidden="true">
+    <img src="/images/pattern.svg" alt="" class="hero-pattern-img" />
+  </div>
+  <div class="container hero-content">
+    <h1 class="hero-title">
+      An independent contributor building <span class="gradient-text">decentralized future</span>
+    </h1>
+  </div>
+</section>
+
+<style>
+  .hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+
+  .hero-pattern {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1544px;
+    height: 1155px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .hero-pattern-img {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: contain;
+  }
+
+  .hero-title {
+    font-family: var(--font-heading);
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1.07;
+    color: var(--color-text);
+    max-width: 1109px;
+    margin: 0 auto;
+    padding: 24px 0;
+  }
+
+  .gradient-text {
+    background: linear-gradient(90deg, #1AA8FF 29.38%, #E775FF 50.06%, #49DCFF 82.6%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  @media (max-width: 1024px) {
+    .hero-title {
+      font-size: 52px;
+    }
+
+    .hero-pattern {
+      width: 1200px;
+      height: 900px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 38px;
+      padding: 16px 0;
+    }
+
+    .hero-pattern {
+      width: 900px;
+      height: 680px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-title {
+      font-size: 30px;
+    }
+
+    .hero-pattern {
+      width: 700px;
+      height: 530px;
+    }
+  }
+</style>

@@ -1,0 +1,311 @@
+---
+interface NewsItem {
+  avatar: string;
+  source: string;
+  handle: string;
+  handleLink?: string;
+  text: string;
+  date: string;
+}
+
+const columns: NewsItem[][] = [
+  [
+    {
+      avatar: '/images/avatar-mytonwallet.png',
+      source: 'MyTonWallet · News',
+      handle: '@MyTonWalletEn',
+      handleLink: 'https://t.me/MyTonWalletEn',
+      text: 'Go Multichain with MyTonWallet: How to Get Started\n\nWith MyTonWallet now supporting multichain standard, here\'s how to make the most of it...',
+      date: 'Dec 21, 2017 at 20:37',
+    },
+    {
+      avatar: '/images/avatar-mytonwallet.png',
+      source: 'MyTonWallet · News',
+      handle: '@MyTonWalletEn',
+      text: 'Meet $MAJOR on MyTonWallet. In just 7 days, $MAJOR will be live on MyTonWallet. Swap, send, and store your Majors with ease',
+      date: 'Dec 21, 2017 at 20:37',
+    },
+    {
+      avatar: '/images/avatar-mytonwallet.png',
+      source: 'MyTonWallet · News',
+      handle: '@MyTonWalletEn',
+      text: 'Introducing MyTonWallet v3.1 — with quick access to connected dapps, auto-lock, and Ledger support for mobile devices. Just recently, MyTonWallet becam...',
+      date: 'Dec 21, 2017 at 20:37',
+    },
+    {
+      avatar: '/images/avatar-mytonwallet.png',
+      source: 'MyTonWallet · News',
+      handle: '@MyTonWalletEn',
+      text: 'Join our $500 Giveaway in Fanzee Battles\n\nDiscover TON\'s best dapps in MyTonWallet\'s Explore hub. Today we\'re featuring Fanzee — the first and largest prediction market on Telegram with USDT rewards.',
+      date: 'Dec 21, 2017 at 20:37',
+    },
+  ],
+  [
+    {
+      avatar: '/images/avatar-cryptobot.png',
+      source: 'Crypto Bot News',
+      handle: '@CryptoBotEN',
+      text: '$3,000 in Prizes for Memecoin Swaps! How to Participate? Achieve a swap volume of over $100 by November 30 by swapping memecoins: DOG...',
+      date: 'Dec 21, 2017 at 20:37',
+    },
+    {
+      avatar: '/images/avatar-cryptobot.png',
+      source: 'Crypto Bot News',
+      handle: '@CryptoBotEN',
+      text: '$3,000 in Prizes for Memecoin Swaps! How to Participate? Achieve a swap volume of over $100 by November 30 by swapping memecoins: DOG...',
+      date: 'Dec 21, 2017 at 20:37',
+    },
+    {
+      avatar: '/images/avatar-cryptobot.png',
+      source: 'Crypto Bot News',
+      handle: '@CryptoBotEN',
+      text: '$3,000 in Prizes for Memecoin Swaps! How to Participate? Achieve a swap volume of over $100 by November 30 by swapping memecoins: DOG...',
+      date: 'Dec 21, 2017 at 20:37',
+    },
+    {
+      avatar: '/images/avatar-cryptobot.png',
+      source: 'Crypto Bot News',
+      handle: '@CryptoBotEN',
+      text: '$3,000 in Prizes for Memecoin Swaps! How to Participate? Achieve a swap volume of over $100 by November 30 by swapping memecoins: DOG...',
+      date: 'Dec 21, 2017 at 20:37',
+    },
+  ],
+  [
+    {
+      avatar: '/images/avatar-dyor.png',
+      source: 'DYOR.io community',
+      handle: '@dyorninja',
+      text: '$MAJOR is available on DYOR.io and in DYOR Hub.\n\n$MAJOR token is a token of the Major project, a popular Telegram rating game built on th...',
+      date: 'Dec 21, 2017 at 20:37',
+    },
+    {
+      avatar: '/images/avatar-dyor.png',
+      source: 'DYOR.io community',
+      handle: '@dyorninja',
+      text: 'DYOR x Hipo Finance. Exclusive bonus Airdrop for $DYOR holders participating in the $HPO TGE!\n\nOur partner, liquid steaking protocol...',
+      date: 'Dec 21, 2017 at 20:37',
+    },
+    {
+      avatar: '/images/avatar-dyor.png',
+      source: 'DYOR.io community',
+      handle: '@dyorninja',
+      text: 'Introducing MyTonWallet v3.1 — with quick access to connected dapps, auto-lock, and Ledger support for mobile devices. Just recently, MyTonWallet becam...',
+      date: 'Dec 21, 2017 at 20:37',
+    },
+    {
+      avatar: '/images/avatar-dyor.png',
+      source: 'DYOR.io community',
+      handle: '@dyorninja',
+      text: 'Join our $500 Giveaway in Fanzee Battles\n\nDiscover TON\'s best dapps in MyTonWallet\'s Explore hub. Today we\'re featuring Fanzee — the first and largest prediction market on Telegram with USDT rewards.',
+      date: 'Dec 21, 2017 at 20:37',
+    },
+  ],
+  [
+    {
+      avatar: '/images/avatar-catchain.png',
+      source: 'CAT — TON Validator, Apps and N',
+      handle: '@catchain',
+      text: 'One more thing. We\'ve expanded the \'Contract\' tab. Now, in addition to the contract code, you can find all address formats and a complete list of wallet',
+      date: 'Dec 21, 2017 at 20:37',
+    },
+    {
+      avatar: '/images/avatar-catchain.png',
+      source: 'CAT — TON Validator, Apps and N',
+      handle: '@catchain',
+      handleLink: 'https://t.me/catchain',
+      text: 'Private Tags. Now you can create a personal address book at Tonscan. Save any blockchain addresses with custom names for quick access. Your sav',
+      date: 'Dec 21, 2017 at 20:37',
+    },
+    {
+      avatar: '/images/avatar-catchain.png',
+      source: 'CAT — TON Validator, Apps and N',
+      handle: '@catchain',
+      text: 'We are pleased to announce that advertising placements are now available on Tonscan — Explore available formats on the this page and feel free to write us with any custom proposals.',
+      date: 'Dec 21, 2017 at 20:37',
+    },
+    {
+      avatar: '/images/avatar-catchain.png',
+      source: 'CAT — TON Validator, Apps and N',
+      handle: '@catchain',
+      text: 'Join our $500 Giveaway in Fanzee Battles\n\nDiscover TON\'s best dapps in MyTonWallet\'s Explore hub. Today we\'re featuring Fanzee — the first and largest prediction market on Telegram with USDT rewards.',
+      date: 'Dec 21, 2017 at 20:37',
+    },
+  ],
+];
+---
+
+<section class="news" id="news">
+  <div class="news-bg">
+    <img src="/images/news-bg.png" alt="" aria-hidden="true" />
+  </div>
+  <div class="news-columns">
+    {columns.map((col) => (
+      <div class="news-column">
+        {col.map((item) => (
+          <article class="news-card">
+            <div class="news-card-header">
+              <img src={item.avatar} alt="" class="news-avatar" width="32" height="32" />
+              <div class="news-card-meta">
+                <span class="news-source">{item.source}</span>
+                {item.handleLink ? (
+                  <a href={item.handleLink} class="news-handle" target="_blank">{item.handle}</a>
+                ) : (
+                  <span class="news-handle">{item.handle}</span>
+                )}
+              </div>
+            </div>
+            <div class="news-card-divider"></div>
+            <p class="news-text">{item.text}</p>
+            <span class="news-date">{item.date}</span>
+          </article>
+        ))}
+      </div>
+    ))}
+  </div>
+</section>
+
+<style>
+  .news {
+    position: relative;
+    padding: 80px 0 0;
+    overflow: hidden;
+  }
+
+  .news-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+
+  .news-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .news-columns {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    gap: 24px;
+    padding: 0 max(24px, calc((100vw - 1728px) / 2 + 216px));
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 80px;
+  }
+
+  .news-columns::-webkit-scrollbar {
+    display: none;
+  }
+
+  .news-column {
+    flex-shrink: 0;
+    width: 408px;
+    background: #fff;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    max-height: 494px;
+    overflow-y: hidden;
+  }
+
+  .news-card {
+    padding: 24px;
+  }
+
+  .news-card + .news-card {
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+  }
+
+  .news-card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  .news-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .news-card-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .news-source {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-text);
+    letter-spacing: -0.22px;
+  }
+
+  .news-handle {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  a.news-handle:hover {
+    opacity: 0.7;
+  }
+
+  .news-card-divider {
+    display: none;
+  }
+
+  .news-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-text);
+    letter-spacing: -0.196px;
+    line-height: 1.57;
+    margin-bottom: 12px;
+    white-space: pre-line;
+  }
+
+  .news-date {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.3);
+    line-height: 1.33;
+  }
+
+  @media (max-width: 1200px) {
+    .news-column {
+      width: 340px;
+    }
+
+    .news-columns {
+      padding: 0 24px;
+      padding-bottom: 60px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .news {
+      padding: 56px 0 0;
+    }
+
+    .news-column {
+      width: 300px;
+      max-height: 420px;
+    }
+
+    .news-columns {
+      padding: 0 16px;
+      padding-bottom: 48px;
+      gap: 16px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .news-column {
+      width: 270px;
+    }
+  }
+</style>

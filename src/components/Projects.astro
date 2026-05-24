@@ -1,0 +1,204 @@
+---
+const projects = [
+  {
+    name: 'Stakee',
+    description: 'Stake TON with the best APY — no lock-ups, manage right in Telegram.',
+    logo: '/icons/stakee-logo.svg',
+    dark: true,
+    url: 'https://stakee.org',
+  },
+  {
+    name: 'Tonscan',
+    description: 'Explore blocks, transactions, and accounts across the TON blockchain.',
+    logo: '/icons/ton-price-icon.svg',
+    branded: true,
+    url: 'https://tonscan.org',
+  },
+  {
+    name: 'Rich Cats',
+    description: 'Collect and customize unique NFT cats on the TON network.',
+    logo: '/icons/richcats-avatar.png',
+    avatar: true,
+    url: 'https://t.me/RichCatsBot',
+  },
+];
+---
+
+<section class="projects" id="projects">
+  <div class="container">
+    <div class="projects-grid">
+      {projects.map((project) => (
+        <a href={project.url} target="_blank" rel="noopener noreferrer" class="project-card">
+          <div class:list={['project-logo-wrap', { 'project-logo-wrap-dark': project.dark, 'project-logo-wrap-branded': project.branded, 'project-logo-wrap-avatar': project.avatar }]}>
+            <img
+              src={project.logo}
+              alt=""
+              class:list={['project-logo', { 'project-logo-avatar': project.avatar }]}
+              width="40"
+              height="40"
+            />
+          </div>
+          <div class="project-body">
+            <span class="project-name">{project.name}</span>
+            <p class="project-desc">{project.description}</p>
+          </div>
+          <svg class="project-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M5.83 14.17L14.17 5.83M14.17 5.83H7.5M14.17 5.83V12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .projects {
+    padding: 0;
+    width: 100%;
+  }
+
+  .projects-grid {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+  }
+
+  .project-card {
+    flex: 1;
+    min-width: 0;
+    background: #fff;
+    border: 1px solid var(--color-card-border);
+    border-radius: var(--radius-xl);
+    padding: 28px 28px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-card);
+    opacity: 1;
+  }
+
+  .project-card:hover .project-arrow {
+    opacity: 1;
+    transform: translate(2px, -2px);
+  }
+
+  .project-logo-wrap {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(0, 152, 234, 0.08), rgba(7, 172, 255, 0.12));
+    border-radius: var(--radius-sm);
+    flex-shrink: 0;
+  }
+
+  .project-logo-wrap.project-logo-wrap-dark {
+    background: linear-gradient(135deg, rgba(0, 152, 234, 1) 0%, rgba(7, 172, 255, 1) 100%);
+  }
+
+  .project-logo-wrap.project-logo-wrap-branded {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 1) 0%, rgba(33, 33, 33, 1) 100%);
+  }
+
+  .project-logo-wrap.project-logo-wrap-avatar {
+    background: linear-gradient(135deg, rgba(0, 152, 234, 1) 0%, rgba(7, 172, 255, 1) 100%);
+    overflow: hidden;
+    padding: 0;
+  }
+
+  .project-logo {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+  }
+
+  .project-logo-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .project-body {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .project-name {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-text);
+    line-height: 1.3;
+    margin-bottom: 6px;
+  }
+
+  .project-desc {
+    font-size: 15px;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+  }
+
+  .project-arrow {
+    position: absolute;
+    top: 28px;
+    right: 28px;
+    color: var(--color-text-secondary);
+    opacity: 0;
+    transition: opacity 0.2s, transform 0.2s;
+  }
+
+  @media (max-width: 768px) {
+    .projects-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    .project-card {
+      flex-direction: row;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 20px;
+    }
+
+    .project-logo-wrap {
+      width: 48px;
+      height: 48px;
+    }
+
+    .project-logo:not(.project-logo-avatar) {
+      width: 30px;
+      height: 30px;
+    }
+
+    .project-name {
+      font-size: 17px;
+      margin-bottom: 2px;
+    }
+
+    .project-desc {
+      font-size: 13px;
+      line-height: 1.4;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .project-arrow {
+      position: static;
+      align-self: center;
+      opacity: 0.4;
+      flex-shrink: 0;
+    }
+  }
+</style>

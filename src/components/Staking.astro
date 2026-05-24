@@ -1,0 +1,275 @@
+---
+---
+
+<section class="staking" id="staking">
+  <div class="container">
+    <div class="staking-heading">
+      <h2 class="staking-title">
+        Stake your <span class="blue-text">TON</span>
+        <span class="staking-title-phrase">
+          easy right in
+          <img src="/icons/telegram-icon.svg" alt="" class="tg-icon-inline" width="56" height="56" />
+          <span class="blue-text">Telegram</span>
+        </span>
+      </h2>
+    </div>
+  </div>
+
+  <div class="cards-scroll">
+    <div class="cards-track">
+      <div class="staking-card staking-card-primary">
+        <div class="card-top">
+          <p class="card-headline white">
+            <span class="stakee-brand">
+              <img src="/icons/stakee-logo.svg" alt="" class="stakee-icon-inline" width="26" height="21" /><span>Stakee</span>
+            </span> provides best APY without locking your funds
+          </p>
+        </div>
+        <div class="card-phone">
+          <img src="/images/card0.webp" alt="Stakee wallet interface" />
+        </div>
+      </div>
+
+      <div class="staking-card staking-card-outlined">
+        <div class="card-phone">
+          <img src="/images/card1.webp" alt="Telegram chat interface" />
+        </div>
+        <div class="card-bottom">
+          <p class="card-headline">
+            Enjoy <span class="blue-text">instant withdraws</span> and
+          </p>
+          <p class="card-headline">manage right in Telegram</p>
+        </div>
+      </div>
+
+      <div class="staking-card staking-card-outlined">
+        <div class="card-phone">
+          <img src="/images/card3.webp" alt="Connect to Fragment" />
+        </div>
+        <div class="card-bottom">
+          <p class="card-headline"><span class="blue-text">Most secure and audited</span></p>
+          <p class="card-headline">staking contract by TON core</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .staking {
+    padding: 80px 0;
+  }
+
+  .staking-heading {
+    margin-bottom: 48px;
+  }
+
+  .staking-title {
+    font-family: var(--font-body);
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: var(--color-text);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0 14px;
+  }
+
+  .staking-title-phrase {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 0 10px;
+  }
+
+  .blue-text {
+    background: linear-gradient(180deg, #0198EA 0%, #14BCFA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .tg-icon-inline {
+    display: inline-block;
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    vertical-align: middle;
+    margin: 0;
+  }
+
+  .cards-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 28px 0;
+  }
+
+  .cards-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  .cards-track {
+    display: flex;
+    gap: 19px;
+    padding: 0 max(24px, calc((100vw - var(--container)) / 2 + var(--gutter)));
+  }
+
+  .staking-card {
+    flex-shrink: 0;
+    width: 408px;
+    height: 605px;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+    position: relative;
+  }
+
+  .staking-card-primary {
+    background: var(--color-primary-light);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .staking-card-primary .card-phone {
+    flex: 1;
+    align-items: flex-end;
+  }
+
+  .staking-card-outlined {
+    background: #fff;
+    border: 1px solid var(--color-card-border);
+  }
+
+  .card-top {
+    padding: 40px 37px 0;
+  }
+
+  .stakee-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+  }
+
+  .stakee-icon-inline {
+    display: block;
+    flex-shrink: 0;
+    width: 26px;
+    height: 21px;
+  }
+
+  .card-headline {
+    font-family: var(--font-body);
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  .card-headline.white {
+    color: #fff;
+  }
+
+  .card-phone {
+    display: flex;
+    justify-content: center;
+    padding: 16px 60px 0;
+  }
+
+  .card-phone img {
+    width: 286px;
+    height: auto;
+  }
+
+  .card-bottom {
+    padding: 0 37px 40px;
+    margin-top: auto;
+  }
+
+  .staking-card-outlined {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .staking-card-outlined .card-phone {
+    flex: 1;
+    align-items: flex-start;
+    padding: 0 60px;
+  }
+
+  @media (max-width: 1024px) {
+    .staking-title {
+      font-size: 36px;
+    }
+
+    .tg-icon-inline {
+      width: 44px;
+      height: 44px;
+    }
+
+    .staking-card {
+      width: 340px;
+      height: 520px;
+    }
+
+    .card-headline {
+      font-size: 19px;
+    }
+
+    .card-phone img {
+      width: 240px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .staking {
+      padding: 56px 0;
+    }
+
+    .staking-heading {
+      padding: 0 var(--gutter);
+    }
+
+    .staking-title {
+      font-size: 30px;
+    }
+
+    .tg-icon-inline {
+      width: 36px;
+      height: 36px;
+    }
+
+    .staking-card {
+      width: 300px;
+      height: 480px;
+    }
+
+    .card-headline {
+      font-size: 17px;
+    }
+
+    .card-phone img {
+      width: 210px;
+    }
+
+    .card-top {
+      padding: 28px 24px 0;
+    }
+
+    .card-bottom {
+      padding: 0 24px 28px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .staking-title {
+      font-size: 26px;
+    }
+
+    .staking-card {
+      width: 270px;
+      height: 440px;
+    }
+  }
+</style>

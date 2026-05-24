@@ -1,0 +1,62 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Projects from '../components/Projects.astro';
+---
+
+<Layout>
+  <Header />
+  <main class="landing">
+    <Hero />
+    <Projects />
+  </main>
+</Layout>
+
+<style>
+  :global(html, body) {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .landing {
+    box-sizing: border-box;
+    height: 100dvh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 66px;
+    overflow: hidden;
+  }
+
+  .landing :global(.hero) {
+    min-height: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 32px;
+  }
+
+  .landing :global(.projects) {
+    min-height: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    padding: 32px 0 48px;
+  }
+
+  @media (max-width: 768px) {
+    .landing {
+      padding-top: 60px;
+    }
+
+    .landing :global(.hero) {
+      padding-bottom: 20px;
+    }
+
+    .landing :global(.projects) {
+      padding: 20px 0 32px;
+    }
+  }
+</style>

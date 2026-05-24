@@ -1,0 +1,16 @@
+{
+  "name": "ton-cat-landing",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro build && wrangler pages dev dist",
+    "deploy": "astro build && wrangler pages deploy dist --project-name=ton-cat-landing --branch main"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "^12.6.13",
+    "astro": "^5.7.0",
+    "wrangler": "^4.94.0"
+  }
+}

@@ -1,0 +1,132 @@
+---
+---
+
+<section class="mission" id="mission">
+  <div class="container">
+    <div class="mission-card">
+      <div class="mission-text">
+        <h2 class="mission-title">The Mission of CAT</h2>
+        <div class="mission-body">
+          <p>We drive the evolution of decentralized, secure, and scalable digital infrastructure—advancing core technology and working with the ecosystem so builders can ship on TON.</p>
+        </div>
+      </div>
+      <div class="mission-visual">
+        <img src="/images/mission-3d.png" alt="TON 3D illustration" class="mission-image" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .mission {
+    padding-bottom: 80px;
+  }
+
+  .mission-card {
+    background: var(--color-primary);
+    border-radius: var(--radius-2xl);
+    padding: 24px 40px;
+    padding-right: 320px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+    min-height: 125px;
+  }
+
+  .mission-text {
+    flex: 1;
+    position: relative;
+    z-index: 1;
+  }
+
+  .mission-title {
+    font-family: var(--font-mission-title);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.05;
+    color: #fff;
+    letter-spacing: -0.6px;
+    margin-bottom: 10px;
+  }
+
+  .mission-body {
+    font-family: var(--font-mission-body);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.45;
+    color: #fff;
+    letter-spacing: -0.2px;
+    max-width: 676px;
+  }
+
+  .mission-body p + p {
+    margin-top: 8px;
+  }
+
+  .mission-visual {
+    position: absolute;
+    right: 24px;
+    bottom: 0;
+    width: 300px;
+    z-index: 1;
+  }
+
+  .mission-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transform: translateY(10%);
+  }
+
+  @media (max-width: 1024px) {
+    .mission-card {
+      padding: 20px 32px;
+      padding-right: 240px;
+    }
+
+    .mission-visual {
+      width: 220px;
+      right: 16px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .mission-card {
+      flex-direction: column;
+      padding: 32px 24px;
+      padding-right: 24px;
+      text-align: center;
+    }
+
+    .mission-visual {
+      position: relative;
+      right: auto;
+      bottom: auto;
+      width: 180px;
+      margin: 0 auto;
+    }
+
+    .mission-image {
+      transform: none;
+    }
+
+    .mission-title {
+      font-size: 22px;
+    }
+
+    .mission-body {
+      font-size: 15px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .mission {
+      padding-bottom: 48px;
+    }
+
+    .mission-visual {
+      width: 150px;
+    }
+  }
+</style>

@@ -1,0 +1,96 @@
+---
+const partners = [
+  { name: 'Telegram', row: 1 },
+  { name: 'MyTonWallet', row: 1 },
+  { name: 'CryptoBot', row: 1 },
+  { name: 'DeDust', row: 1 },
+  { name: 'DYOR', row: 1 },
+  { name: 'Portals', row: 1 },
+  { name: 'Toncenter', row: 1 },
+  { name: 'Minigate', row: 2 },
+  { name: 'Major', row: 2 },
+  { name: 'EVAA', row: 2 },
+];
+---
+
+<section class="partners" id="partners">
+  <div class="container">
+    <div class="partners-card">
+      <p class="partners-label">OUR STRATEGIC PARTNERS</p>
+      <div class="partners-grid">
+        {partners.map((p) => (
+          <span class="partner-name">{p.name}</span>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .partners {
+    padding: 0 0 80px;
+  }
+
+  .partners-card {
+    background: var(--color-bg-alt);
+    border-radius: var(--radius-lg);
+    padding: 32px 40px 40px;
+  }
+
+  .partners-label {
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    letter-spacing: -0.01px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  .partners-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 40px;
+  }
+
+  .partner-name {
+    font-family: var(--font-body);
+    font-size: 21px;
+    font-weight: 600;
+    color: var(--color-text);
+    text-transform: capitalize;
+    letter-spacing: -0.01px;
+  }
+
+  @media (max-width: 768px) {
+    .partners-card {
+      padding: 24px;
+    }
+
+    .partners-label {
+      font-size: 14px;
+    }
+
+    .partner-name {
+      font-size: 17px;
+    }
+
+    .partners-grid {
+      gap: 12px 28px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .partners {
+      padding: 0 0 48px;
+    }
+
+    .partner-name {
+      font-size: 15px;
+    }
+
+    .partners-grid {
+      gap: 10px 20px;
+    }
+  }
+</style>
