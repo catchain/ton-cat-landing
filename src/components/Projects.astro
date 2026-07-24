@@ -2,6 +2,7 @@
 const projects = [
   {
     name: 'Stakee',
+    i18n: 'projects.stakee.desc',
     description: 'Stake TON with the best APY — no lock-ups, manage right in Telegram.',
     logo: '/icons/stakee-logo.svg',
     dark: true,
@@ -9,6 +10,7 @@ const projects = [
   },
   {
     name: 'Tonscan',
+    i18n: 'projects.tonscan.desc',
     description: 'Explore blocks, transactions, and accounts across the TON blockchain.',
     logo: '/icons/ton-price-icon.svg',
     branded: true,
@@ -16,6 +18,7 @@ const projects = [
   },
   {
     name: 'Rich Cats',
+    i18n: 'projects.richcats.desc',
     description: 'Collect and customize unique NFT cats on the TON network.',
     logo: '/icons/richcats-avatar.png',
     avatar: true,
@@ -40,7 +43,7 @@ const projects = [
           </div>
           <div class="project-body">
             <span class="project-name">{project.name}</span>
-            <p class="project-desc">{project.description}</p>
+            <p class="project-desc" data-i18n={project.i18n}>{project.description}</p>
           </div>
           <svg class="project-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
             <path d="M5.83 14.17L14.17 5.83M14.17 5.83H7.5M14.17 5.83V12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>

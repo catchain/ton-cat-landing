@@ -2,14 +2,14 @@
 import LogoIcon from './LogoIcon.astro';
 
 const navLinks = [
-  { label: 'Mission', href: '#mission', hidden: true },
-  { label: 'Projects', href: '#staking', hidden: true },
-  { label: 'News Feed', href: '#news', hidden: true },
+  { i18n: 'nav.mission', label: 'Mission', href: '#mission', hidden: true },
+  { i18n: 'nav.projects', label: 'Projects', href: '#staking', hidden: true },
+  { i18n: 'nav.news', label: 'News Feed', href: '#news', hidden: true },
 ];
 
 const externalLinks = [
-  { label: 'Github', href: 'https://github.com/catchain' },
-  { label: 'Telegram', href: 'https://t.me/catchain' },
+  { i18n: 'nav.github', label: 'Github', href: 'https://github.com/catchain' },
+  { i18n: 'nav.telegram', label: 'Telegram', href: 'https://t.me/catchain' },
 ];
 ---
 
@@ -21,11 +21,11 @@ const externalLinks = [
 
     <nav class="nav">
       {navLinks.map((link) => (
-        <a href={link.href} class:list={['nav-link', { 'nav-link-hidden': link.hidden }]}>{link.label}</a>
+        <a href={link.href} class:list={['nav-link', { 'nav-link-hidden': link.hidden }]} data-i18n={link.i18n}>{link.label}</a>
       ))}
       {externalLinks.map((link) => (
         <a href={link.href} class="nav-link nav-link-external">
-          {link.label}
+          <span data-i18n={link.i18n}>{link.label}</span>
           <img src="/icons/arrow-up-right.svg" alt="" class="arrow-icon" width="9" height="9" />
         </a>
       ))}

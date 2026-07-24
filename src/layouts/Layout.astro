@@ -31,14 +31,9 @@ const { title = 'TON Core — Independent Contributor Building Decentralized Fut
     body { opacity: 0; transition: opacity 0.15s; }
     body.ready { opacity: 1; }
   </style>
+  <script src="/locale.js" defer></script>
 </head>
 <body>
   <slot />
-
-  <script is:inline>
-    document.addEventListener('DOMContentLoaded', function() {
-      document.body.classList.add('ready');
-    });
-  </script>
 </body>
 </html>
